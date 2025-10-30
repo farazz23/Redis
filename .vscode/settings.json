@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "fira-code-nerd",
+    "editor.fontLigatures": false,
+    "workbench.iconTheme": "fira-code-material-icon-theme",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+}
