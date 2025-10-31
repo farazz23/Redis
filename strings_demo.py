@@ -49,12 +49,15 @@ print(f"Temprory key after 3 sec is: {r.get("temprory_key")}")
 
 
 
-#! 5️⃣ SET with NX/XX (Conditional Set)
-#TODO:  NX: only set if key does NOT exist
-#TODO:  XX: only set if key already exists
+# ! 5️⃣ SET with NX/XX (Conditional Set)
+# TODO:  NX: only set if key does NOT exist
+# TODO:  XX: only set if key already exists
 
 was_set = r.set("unique_key", "First time", nx=True)
 print("5️⃣ NX -> First set success?", bool(was_set))
 was_set_again = r.set("unique_key", "Overwrite attempt", nx=True)
 print("5️⃣ NX -> Second set success?", bool(was_set_again))
 print("Current value ->", r.get("unique_key"))
+#! NOTE: Here, bool() converts 'OK'-> True and None-> False, 
+
+
