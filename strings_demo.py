@@ -61,3 +61,13 @@ print("Current value ->", r.get("unique_key"))
 #! NOTE: Here, bool() converts 'OK'-> True and None-> False, 
 
 
+"""
+? SET key value	Stores a value under a key.
+? GET key	Retrieves the value for a key.
+INCR key / DECR key	Atomically increment/decrement numeric values.
+APPEND key value	Appends data to an existing string.
+SETEX key seconds value or SET(key, value, ex=seconds)	Set value with expiry.
+TTL key	Returns remaining time-to-live in seconds.
+SETNX key value	Set value only if key doesn’t exist (used internally by nx=True).
+
+"""
