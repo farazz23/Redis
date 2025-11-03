@@ -21,6 +21,8 @@ if __name__ == "__main__":
             print("Connected to the Redis Successfully...", redis_client)
     except : 
         print("Failed to connect to Redis") 
+    finally:
+        redis_client.close()
 
 
     redis_client.set("Welcome", "Hey, Redis from Python!")

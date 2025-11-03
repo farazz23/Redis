@@ -10,10 +10,10 @@ r = connect_redis()
 key = 'user_activity'
 r.delete(key)
 
-r.setbit(key, 91 , 1)   # user id 1 is active
-r.setbit(key, 3,1)
-r.setbit(key, 5,1)
-r.setbit(key, 7,1)
+r.setbit(key, 91 , 1)   # user id 91 is active
+r.setbit(key, 3,1)      # user id 3 is active 
+r.setbit(key, 5,1)      # user id 5 s active
+r.setbit(key, 7,1)      # user id 7 is active 
 
 print(f"is user 2 exist {r.getbit(key, 2)}")
 print(f"is user 1 exist {r.getbit(key, 1)}")
