@@ -4,14 +4,6 @@ r= connect_redis()
 geo_key = ""
 
 
-"""
-Code samples for Geospatial doc pages:
-    https://redis.io/docs/latest/develop/data-types/geospatial/
-"""
-import redis
-
-r = redis.Redis(decode_responses=True)
-
 res1 = r.geoadd("bikes:rentable", [-122.27652, 37.805186, "station:1"])
 print(res1)  # >>> 1
 
@@ -32,14 +24,6 @@ res4 = r.geosearch(
 print(res4)  # >>> ['station:1', 'station:2', 'station:3']
 
 
-
-"""
-Code samples for Geospatial doc pages:
-    https://redis.io/docs/latest/develop/data-types/geospatial/
-"""
-import redis
-
-r = redis.Redis(decode_responses=True)
 
 res1 = r.geoadd("bikes:rentable", [-122.27652, 37.805186, "station:1"])
 print(res1)  # >>> 1
